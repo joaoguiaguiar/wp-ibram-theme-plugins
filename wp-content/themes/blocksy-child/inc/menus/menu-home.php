@@ -19,7 +19,7 @@ if (!function_exists('menu_personalizado_home')) {
                     <p class="p__menu" style="font-size: 1rem; color: #F5F5F5;">Instituto Brasileiro de Museus</p>
                     <h3>
                         <a style="text-decoration: none; color: white;" href="<?php echo home_url(); ?>" class="titulo__menu">
-                            Museu de Arte Religiosa e Tradicional
+                            Museus Castro Maya 
                         </a>
                     </h3>
                 </div>
