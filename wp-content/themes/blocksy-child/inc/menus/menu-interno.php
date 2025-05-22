@@ -14,7 +14,7 @@ if (!function_exists('menu_personalizado_interno')) {
                         <p class="p__menu" style="font-size: 1rem;">Instituto Brasileiro de Museus</p>
                         <h3>
                             <a href="<?php echo home_url('/'); ?>" class="titulo__menu" style="text-decoration: none;">
-                                Museu de Arte Religiosa e Tradicional
+                                Museus Castro Maya 
                             </a>
                         </h3>
                     </div>
