@@ -92,7 +92,6 @@ function mi_add_inline_scripts() {
 }
 
 
-
 function meu_script_overlay_postx() {
   ?>
 <script>

@@ -7,7 +7,7 @@ if (!function_exists('menu_personalizado_home')) {
         if (!is_front_page()) return;  // só roda na front page
 
         ?>
-        <main id="main-content">
+        <aside id="hero-aside">
             <section class="hero-carousel">
                 <div class="carousel-container">
                     <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
@@ -59,7 +59,7 @@ if (!function_exists('menu_personalizado_home')) {
                     </div>
                 </div>
             </section>
-        </main>
+            </aside>
         <?php
     }
 }
