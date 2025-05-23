@@ -20,7 +20,6 @@ require_once get_stylesheet_directory() . '/inc/customizer/shortcodes.php';
 require_once get_stylesheet_directory() . '/inc/widget/menu-widget.php';
 
 
-
 // Remove all existing style actions
 remove_filter('locale_stylesheet_uri', 'chld_thm_cfg_locale_css');
 remove_action('wp_enqueue_scripts', 'enqueue_bootstrap', 30);
