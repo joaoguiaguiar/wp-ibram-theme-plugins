@@ -1,5 +1,4 @@
 <?php
-
 // MENU 2: Exibir em páginas internas (exceto na home)
 if (!function_exists('menu_personalizado_interno')) {
     add_action('blocksy:header:after', 'menu_personalizado_interno');
@@ -20,8 +19,10 @@ if (!function_exists('menu_personalizado_interno')) {
                     </div>
 
                     <div class="menu-and-search-menu2">
-                        <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
-                        
+                        <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" style="cursor:pointer; display:inline-block; color: white;">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
                         <nav class="menu__items">
                             <?php
                             $menu_items = wp_get_nav_menu_items('menu-principal');

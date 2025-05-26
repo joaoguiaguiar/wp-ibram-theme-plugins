@@ -1,10 +1,9 @@
 <?php
-
 // MENU 1: Exibir SOMENTE na página inicial
 if (!function_exists('menu_personalizado_home')) {
     add_action('blocksy:header:after', 'menu_personalizado_home');
     function menu_personalizado_home() {
-        if (!is_front_page()) return;  // só roda na front page
+        if (!is_front_page()) return;  
 
         ?>
         <aside id="hero-aside">
@@ -16,16 +15,18 @@ if (!function_exists('menu_personalizado_home')) {
 
             <section class="hero-menu menu-1" id="menu-1">
                 <div class="containner__p">
-                    <p class="p__menu" style="font-size: 1rem; color: #F5F5F5;">Instituto Brasileiro de Museus</p>
+                    <p class="p__menu" style="font-size: 1rem;">Instituto Brasileiro de Museus</p>
                     <h3>
-                        <a style="text-decoration: none; color: white;" href="<?php echo home_url(); ?>" class="titulo__menu">
-                            Museus Castro Maya 
+                        <a href="<?php echo home_url(); ?>" class="titulo__menu">
+                            Museus Castro Maya
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-and-search">
-                    <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+                    <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" style="cursor:pointer; display:inline-block; color: white;">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
                     
                     <nav class="menu__items">
                         <?php
@@ -59,7 +60,7 @@ if (!function_exists('menu_personalizado_home')) {
                     </div>
                 </div>
             </section>
-            </aside>
+        </aside>
         <?php
     }
 }
