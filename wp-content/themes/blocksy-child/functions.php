@@ -77,7 +77,6 @@ function mi_add_inline_scripts() {
         }
     }
     
-    // Adicionar para debugging no Customizer
     if (window.wp && window.wp.customize) {
         console.log('WordPress Customizer detected');
         document.addEventListener('DOMContentLoaded', function() {
