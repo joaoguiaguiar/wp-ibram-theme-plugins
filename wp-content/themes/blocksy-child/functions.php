@@ -20,7 +20,6 @@ require_once get_stylesheet_directory() . '/inc/customizer/shortcodes.php';
 require_once get_stylesheet_directory() . '/inc/widget/menu-widget.php';
 
 
-// Remove all existing style actions
 remove_filter('locale_stylesheet_uri', 'chld_thm_cfg_locale_css');
 remove_action('wp_enqueue_scripts', 'enqueue_bootstrap', 30);
 remove_action('wp_enqueue_scripts', 'enqueue_custom_js', 40);
@@ -102,7 +101,6 @@ function meu_script_overlay_postx() {
         var $title = $item.find('.ultp-block-title');
 		var $link = $title.find('.ultp-component-simple'); 
  
-		  
         if ($imageContainer.length && $title.length) {
           $image.css({
             'opacity': 'o.4', 
