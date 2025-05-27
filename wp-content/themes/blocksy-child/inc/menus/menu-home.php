@@ -9,7 +9,7 @@ if (!function_exists('menu_personalizado_home')) {
         <aside id="hero-aside">
             <section class="hero-carousel">
                 <div class="carousel-container">
-                    <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
+                    <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
                 </div>
             </section>
 
