@@ -3,7 +3,6 @@
 if (!defined('ABSPATH')) exit;
 
 require_once get_stylesheet_directory() . '/inc/customizer/customizer.php';
-require_once get_stylesheet_directory() . '/inc/customizer/shortcodes.php';
 
 
 require_once get_stylesheet_directory() . '/inc/menus/menus.php';
@@ -69,28 +68,3 @@ function mi_render_category_menu($location, $title, $item_class = 'item__menu') 
 function mi_get_home_url() {
     return esc_url(home_url('/'));
 }
-
-// Adicionar script inline para garantir que as funções JavaScript existam
-function mi_add_inline_scripts() {
-    ?>
-    <script>
-    function toggleMenu() {
-        const lista = document.querySelector('.container__lista');
-        if (lista) {
-            lista.classList.toggle('active');
-        }
-    }
-    
-    if (window.wp && window.wp.customize) {
-        console.log('WordPress Customizer detected');
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Menu elements:');
-            console.log('Menu personalizado:', document.querySelectorAll('.menu-personalizado').length);
-            console.log('Menu 2:', document.querySelectorAll('.menu-2').length);
-            console.log('Menu mobile:', document.querySelectorAll('.menu-mobile').length);
-        });
-    }
-    </script>
-    <?php
-}
-

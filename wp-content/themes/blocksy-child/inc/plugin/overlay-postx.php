@@ -8,7 +8,7 @@ function meu_script_overlay_postx() {
         var $imageContainer = $item.find('.ultp-block-image');
         var $image = $imageContainer.find('img');
         var $title = $item.find('.ultp-block-title');
-		var $link = $title.find('.ultp-component-simple'); 
+		    var $link = $title.find('.ultp-component-simple'); 
  
 		  
         if ($imageContainer.length && $title.length) {

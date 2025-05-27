@@ -19,18 +19,6 @@ function register_main_menu_sidebar() {
 }
 add_action('widgets_init', 'register_main_menu_sidebar');
 
-// Substitui a renderização padrão dos itens do menu principal
-function custom_menu_widget_style($items, $args) {
-    if (isset($args->theme_location) && $args->theme_location == 'main-menu') {
-        $items = '<ul class="lista_item_menu" style="display: flex; justify-content: space-evenly; list-style: none; padding: 0;">';
-        foreach ($items as $item) {
-            $items .= '<li>' . $item . '</li>';
-        }
-        $items .= '</ul>';
-    }
-    return $items;
-}
-add_filter('wp_nav_menu_items', 'custom_menu_widget_style', 10, 2);
 
 // Conteúdo alternativo para o widget de menu
 function mi_get_menu_widget_content() {

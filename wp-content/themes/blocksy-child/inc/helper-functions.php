@@ -7,7 +7,6 @@ function mi_check_css_files() {
     }
     $css_files = array(
         'menu.css' => '/* Estilos para o menu principal */',
-        'menu-2.css' => '/* Estilos para menus secundários */',
     );
     foreach ($css_files as $file => $default_content) {
         $file_path = $css_dir . '/' . $file;
@@ -45,5 +44,3 @@ function mi_debug_enqueued_scripts() {
     }
 }
 add_action('wp_head', 'mi_debug_enqueued_scripts');
-
-
