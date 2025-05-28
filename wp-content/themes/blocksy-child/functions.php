@@ -11,6 +11,8 @@ require_once get_stylesheet_directory() . '/inc/menus/menu-interno.php';
 
 
 require_once get_stylesheet_directory() . '/inc/plugin/overlay-postx.php';
+require_once get_stylesheet_directory() . '/inc/plugin/estilo-hover-smartslider.php';
+
 
 
 require_once get_stylesheet_directory() . '/inc/widget/menu-widget.php';
