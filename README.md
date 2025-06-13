@@ -1,8 +1,9 @@
-# Repertório em React
+# Desenvolvimento de Tema Personalizado
 
 ## Sobre este projeto
 
-Este projeto é o meu currículo online, desenvolvido com React. O objetivo é apresentar uma forma interativa e dinâmica de compartilhar minha trajetória profissional, os projetos que realizei, as habilidades que adquiri e minha formação acadêmica. O site funciona como uma landing page pessoal, com informações sobre mim e links para os projetos que venho desenvolvendo ao longo da minha carreira.
+Este repositório contém os arquivos de desenvolvimento personalizados do site do **Museus Castro Maya**, criado como parte do meu trabalho como desenvolvedor no **IBRAM**.
+
 ## Tema Filho Customizado
 
 O projeto teve como principal objetivo a criação de um **tema-filho** baseado no tema Bloxy, permitindo personalizações visuais e funcionais diretamente integradas ao painel administrativo do WordPress. Essa abordagem facilita a manutenção por parte dos gestores de conteúdo, sem a necessidade de intervenção técnica.
