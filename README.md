@@ -2,36 +2,36 @@
 
 ## Sobre este projeto
 
-Este repositório contém os arquivos de desenvolvimento personalizados do site do **Museus Castro Maya**, criado como parte do meu trabalho como desenvolvedor no **IBRAM**.
+Este repositório contém o tema personalizado que criei para os sites oficiais dos museus vinculados ao Instituto Brasileiro de Museus (IBRAM), desenvolvido como parte do meu trabalho no IBRAM
 
 ## Tema Filho Customizado
 
-O projeto teve como principal objetivo a criação de um **tema-filho** baseado no tema Bloxy, permitindo personalizações visuais e funcionais diretamente integradas ao painel administrativo do WordPress. Essa abordagem facilita a manutenção por parte dos gestores de conteúdo, sem a necessidade de intervenção técnica.
+O projeto teve como principal objetivo a criação de um **tema-filho** baseado no tema Blocksy, replicando o layout do tema anterior, porém com melhorias estruturais, visuais e funcionais.
+
+A escolha do tema Blocksy permitiu integrar personalizações diretamente ao painel administrativo do WordPress, facilitando a manutenção pelos gestores de conteúdo, sem a necessidade de editar o código manualmente.
 
 ### Funcionalidades implementadas
 
-- **Conexão entre o código do tema e os menus registrados no WordPress**, permitindo total controle dos itens do menu via painel.  
-- **Personalização visual diretamente pelo WordPress**, incluindo:  
-  - Alteração da cor de fundo do menu  
-  - Alteração da cor dos itens do menu  
-  - Tudo isso **sem necessidade de editar o código manualmente**  
-- **Criação de um widget personalizado**, que permite vincular menus criados em *Aparência > Menus* ao layout do site.  
-  - O widget possibilita, por exemplo, a exibição de um **menu lateral estilo "menu sanduíche"** sobre o carrossel da página inicial.  
+- **Integração entre os menus personalizados do tema e o sistema de menus do WordPress**, permitindo total controle dos itens do menu via painel administrativo.
+- **Personalização visual diretamente pelo WordPress**, incluindo:
+  - Alteração da cor de fundo do menu
+  - Tudo isso **sem necessidade de editar o código manualmente**
+- **Criação de um widget personalizado**, que permite vincular menus criados em *Aparência > Menus* ao layout do site.
+  - O widget possibilita, por exemplo, a exibição de um **menu lateral estilo "menu sanduíche"** sobre o carrossel da página inicial.
   - Garante **flexibilidade e acessibilidade** à navegação.
+- **Utilizando a biblioteca jQuery do JavaScript**, consegui manipular o CSS dos plugins, o que me permitia ter controle total sem mexer no código fonte do plugin, apenas manipulando estilos.
+
+Tudo isso via PHP, sem a necessidade de editar o código manualmente.
 
 ## ⚠️ Aviso
 
-Por questões de **confidencialidade e boas práticas**, este repositório contém **apenas arquivos de minha autoria**.  
+Por questões de **confidencialidade e boas práticas**, este repositório contém **apenas arquivos de minha autoria**.
 Arquivos do core do WordPress, banco de dados ou configurações de servidor **não foram incluídos**.
 
-## 🌐 Site em produção
+## 🌐 Um dos Sites em produção
 
 [https://museuscastromaya.museus.gov.br/](https://museuscastromaya.museus.gov.br/)
 
 ## 💬 Observações
 
-<<<<<<< HEAD
 Este projeto foi desenvolvido em ambiente local utilizando **XAMPP**, com exportação realizada via **All-in-One WP Migration** para ambiente em nuvem (Gov.br/AWS).
-=======
-Este projeto foi desenvolvido em ambiente local utilizando **XAMPP**, com exportação realizada via **All-in-One WP Migration** para ambiente em nuvem (Gov.br/AWS).
->>>>>>> ca06605b91a6bfd8b1b0c4af1d6a219619db7b2f
