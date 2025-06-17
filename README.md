@@ -4,8 +4,7 @@
 
 Este repositório contém o tema personalizado e plugin que criei para os sites oficiais dos museus vinculados ao Instituto Brasileiro de Museus (IBRAM), desenvolvido como parte do meu trabalho no IBRAM.
 
-**🔗 Para informações detalhadas sobre o plugin, acesse o repositório dedicado: [Plugin Barra Oficial do Governo](link-do-repo-do-plugin)**
-
+**🔗 Para informações detalhadas sobre o plugin, acesse o repositório dedicado: [Plugin Barra Oficial do Governo](https://github.com/joaoguiaguiar/Desenvolvimento-de-Plugin)**
 
 ## Tema Filho Customizado
 
@@ -34,7 +33,3 @@ Arquivos do core do WordPress, banco de dados ou configurações de servidor **n
 ## 🌐 Um dos Sites em produção
 
 [https://museuscastromaya.museus.gov.br/](https://museuscastromaya.museus.gov.br/)
-
-## 💬 Observações
-
-Este projeto foi desenvolvido em ambiente local utilizando **XAMPP**, com exportação realizada via **All-in-One WP Migration** para ambiente em nuvem (Gov.br/AWS).
