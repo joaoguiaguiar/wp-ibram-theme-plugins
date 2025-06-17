@@ -30,4 +30,8 @@ Arquivos do core do WordPress, banco de dados ou configurações de servidor **n
 
 ## 💬 Observações
 
+<<<<<<< HEAD
 Este projeto foi desenvolvido em ambiente local utilizando **XAMPP**, com exportação realizada via **All-in-One WP Migration** para ambiente em nuvem (Gov.br/AWS).
+=======
+Este projeto foi desenvolvido em ambiente local utilizando **XAMPP**, com exportação realizada via **All-in-One WP Migration** para ambiente em nuvem (Gov.br/AWS).
+>>>>>>> ca06605b91a6bfd8b1b0c4af1d6a219619db7b2f
