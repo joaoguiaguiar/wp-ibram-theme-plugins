@@ -6,8 +6,6 @@ Version: 1.0
 Author: joao.aguiar
 */
 
-
-
 if (!defined('ABSPATH')) {
     exit;
 }
