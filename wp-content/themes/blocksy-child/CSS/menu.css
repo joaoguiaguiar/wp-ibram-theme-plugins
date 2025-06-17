@@ -1,0 +1,153 @@
+.menu-1 {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1300px;
+    background: transparent;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.titulo__menu{
+    font-size: 1.5rem !important;
+    color:white !important;
+}
+
+.titulo__menu:hover{
+    text-decoration: underline !important;
+}
+
+.menu__items a:hover {
+    text-decoration: underline !important;
+}
+
+.menu-and-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100% !important;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.menu__items a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.container__lista {
+    display: none;
+    position: absolute;
+    top: 3rem !important;
+    left: 0;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    background: white;
+    padding: 2rem 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container__lista.active {
+    display: block;
+}
+
+.containner__p p {
+    margin-bottom: 0;
+}
+
+.containner__p h3 {
+    margin-top: 0;
+}
+
+
+/* Menu 2 */
+
+
+
+.menu-personalizado.menu-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+}
+
+.GRID {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    width: 100% ; 
+}
+
+.menu-and-search-menu2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    grid-row: 2; 
+    grid-column: 1; 
+}
+
+.menu__items{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    white-space: nowrap;
+    color: white;
+    width: auto; 
+    list-style: none;
+    padding: 0;
+    flex-grow: 1; 
+    
+}
+
+
+.container__lista.active {
+    display: block;
+}
+
+
+/* Para mobile (até 768px) */
+@media (max-width: 768px) {
+    .menu-1 {
+        display: none !important;
+    }
+   .menu-personalizado.menu-2 {
+        display: none !important;
+    }
+
+
+
+}
+
+/* Para tablets (entre 769px e 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-1 {
+        display: none !important;
+    }
+
+       .menu-personalizado.menu-2 {
+        display: none !important;
+    }
+}
