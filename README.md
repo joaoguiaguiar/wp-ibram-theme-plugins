@@ -19,7 +19,7 @@ A escolha do tema Blocksy permitiu integrar personalizações diretamente ao pai
   - Alteração da cor de fundo do menu
   - Tudo isso **sem necessidade de editar o código manualmente**
 - **Criação de um widget personalizado**, que permite vincular menus criados em *Aparência > Menus* ao layout do site.
-  - O widget possibilita, por exemplo, a exibição de um **menu lateral estilo "menu sanduíche"** sobre o carrossel da página inicial.
+  - O widget possibilita, por exemplo, a exibição de um **menu lateral estilo "menu sanduíche"** sobre o menu do site.
   - Garante **flexibilidade e acessibilidade** à navegação.
 - **Utilizando a biblioteca jQuery do JavaScript**, consegui manipular o CSS dos plugins, o que me permitia ter controle total sem mexer no código fonte do plugin, apenas manipulando estilos.
 
