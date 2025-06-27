@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Barra do Governo
-Author: João Aguiar
+Author: joao.aguiar
 Author URI: https://github.com/joaoguiaguiar
 Description: Ao ativar o plugin, a Barra do Governo Federal é automaticamente exibida no topo do site, independentemente do tema utilizado, garantindo visibilidade e funcionamento contínuo.
 Version: 1.0
