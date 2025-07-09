@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../assets/fonts/RedHatDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../assets/fonts/RedHatDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+      font-family: 'Red Hat Display', sans-serif !important;
+}
+
+
 .menu-1 {
     position: absolute;
     top: 3rem;
