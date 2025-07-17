@@ -2,9 +2,12 @@
 
 ## Sobre este projeto
 
-Este repositório contém o tema personalizado e plugin que criei para os sites oficiais dos museus vinculados ao Instituto Brasileiro de Museus (IBRAM), desenvolvido como parte do meu trabalho no IBRAM.
+Este repositório contém o tema personalizado e os plugins que criei para os sites oficiais dos museus vinculados ao Instituto Brasileiro de Museus (IBRAM), desenvolvido como parte do meu trabalho no IBRAM.
 
-**🔗 Para informações detalhadas sobre o plugin, acesse o repositório dedicado: [Plugin Barra Oficial do Governo](https://github.com/joaoguiaguiar/Desenvolvimento-de-Plugin)**
+**🔗 Para informações detalhadas sobre o plugin gov, acesse o repositório dedicado: [Plugin Barra Oficial do Governo](https://github.com/joaoguiaguiar/plugin-gov-oficial)**
+
+**🔗 Para informações detalhadas sobre o plugin smartslider-editor-access , acesse o repositório dedicado: [Plugin Smartslider Editor Access](https://github.com/joaoguiaguiar/plugin-smartslider-editor-access)**
+
 
 ## Tema Filho Customizado
 
