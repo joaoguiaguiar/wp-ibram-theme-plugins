@@ -34,6 +34,6 @@ Arquivos do core do WordPress, banco de dados ou configurações de servidor **n
 
 ## 🌐 Um dos Sites em produção
 
-[https://museuscastromaya.museus.gov.br/](https://museuscastromaya.museus.gov.br/)
+[https://museuimperial.museus.gov.br/](https://museuimperial.museus.gov.br/)
 
 ![Logo IBRAM](./screenshot.jpg)

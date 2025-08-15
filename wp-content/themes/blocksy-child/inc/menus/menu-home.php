@@ -9,7 +9,7 @@ if (!function_exists('menu_personalizado_home')) {
         <aside id="hero-aside">
             <section class="hero-carousel">
                 <div class="carousel-container">
-                    <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
+                    <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
                 </div>
             </section>
 
@@ -18,7 +18,7 @@ if (!function_exists('menu_personalizado_home')) {
                     <p class="p__menu" style="font-size: 1rem; color:white;">Instituto Brasileiro de Museus</p>
                     <h3>
                         <a href="<?php echo home_url(); ?>" class="titulo__menu">
-                            Museus Castro Maya
+                            Museu Imperial
                         </a>
                     </h3>
                 </div>
