@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Red Hat Display';
-    src: url('../assets/static/fonts/RedHatDisplay-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/RedHatDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Red Hat Display';
-    src: url('../assets/static/fonts/RedHatDisplay-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/RedHatDisplay-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -18,6 +18,10 @@ body, p, h1, h2, h3, h4, h5, h6, a, li, span, div, button, input, textarea {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+footer, 
+footer * {
+    font-family: 'Red Hat Display', sans-serif !important;
+}
 
 .menu-1 {
     position: absolute;
@@ -100,7 +104,6 @@ body, p, h1, h2, h3, h4, h5, h6, a, li, span, div, button, input, textarea {
 
 
 /* Menu 2 */
-
 
 
 .menu-personalizado.menu-2 {
