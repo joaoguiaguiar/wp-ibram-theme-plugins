@@ -1,9 +1,12 @@
-const menuButton = document.querySelector('#menu-toggle'); 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('#menu-toggle');
+    const menuList = document.querySelector('.container__lista');
 
-function toggleMenu() {
-    const lista = document.querySelector('.container__lista');
-    lista.classList.toggle('active');
-}
+    if (menuButton && menuList) {
+        function ibramToggleMenu() {
+            menuList.classList.toggle('active');
+        }
 
-
-menuButton.addEventListener('click', toggleMenu);
+        menuButton.addEventListener('click', ibramToggleMenu);
+    }
+});

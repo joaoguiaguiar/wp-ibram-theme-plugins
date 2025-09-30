@@ -1,10 +1,13 @@
 <?php
 /*
-Plugin Name: Barra do Governo
-Author: joao.aguiar
+Plugin Name: Barra do Governo - IBRAM
+Plugin URI: https://github.com/joaoguiaguiar/plugin-gov-oficial
+Description: Coloca a Barra do Governo Federal no topo do site automaticamente
+Version: 1.0.0
+Author: CTINF / joao.aguiar
 Author URI: https://github.com/joaoguiaguiar
-Description: Ao ativar o plugin, a Barra do Governo Federal é automaticamente exibida no topo do site, independentemente do tema utilizado, garantindo visibilidade e funcionamento contínuo.
-Version: 1.0
+Text Domain: ibram-barra-governo
+License: GPL v2 or later
 */
 
 if (!defined('ABSPATH')) {

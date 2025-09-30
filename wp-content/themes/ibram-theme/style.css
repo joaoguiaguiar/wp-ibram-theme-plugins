@@ -1,10 +1,28 @@
-/*
-Theme Name: Tema Ibram 2025
-Theme URI: https://www.gov.br/museus/pt-br
-Template: blocksy
-Author: CTINF / joao.aguiar
-Author URI: https://github.com/joaoguiaguiar
-Description: Este tema foi desenvolvido pela CTINF para os sites institucionais do Ibram, como resposta a incidentes de segurança enfrentados anteriormente. Trata-se de um tema filho do Blocksy, altamente personalizado para oferecer segurança, desempenho e facilidade de uso.
-Version: 1.0.5
-Updated: 2025-05-27
-*/
+/**
+ * Theme Name:  IBRAM Theme
+ * Theme URI:   https://www.gov.br/museus/pt-br
+ * Template:    blocksy
+ * Author:      CTINF / joao.aguiar
+ * Author URI:  https://github.com/joaoguiaguiar
+ * Description: Tema filho customizado desenvolvido pela CTINF para os sites institucionais do Ibram. Desenvolvido como resposta a incidentes de segurança, replicando o layout anterior com melhorias estruturais, visuais e funcionais baseado no Blocksy para facilitar a manutenção por gestores de conteúdo.
+ * Version:     1.0.5
+ * Text Domain: ibram-theme
+ * Requires PHP: 7.4
+ * License:     GPL v2 or later
+ * 
+ * TEMA FILHO PERSONALIZADO PARA IBRAM - INSTITUTO BRASILEIRO DE MUSEUS
+ * 
+ * PRINCIPAIS FUNCIONALIDADES IMPLEMENTADAS:
+ * - Integração completa entre menus personalizados e sistema de menus nativo do WordPress
+ * - Widget personalizado para vinculação de menus criados em Aparência > Menus
+ * - Implementação de um menu overlay lateral (off-canvas), ativado por ícone sanduíche, para exibir menus de navegação criados via widget customizado
+ * - Personalização visual via painel administrativo (cores de fundo do Menu.)
+ * - Manipulação de CSS de plugins via jQuery/PHP sem alterar código fonte original
+ * - Navegação flexível e acessível para todos os perfis de usuário
+ * 
+ * 
+ * Desenvolvido como parte do trabalho no IBRAM para sites oficiais dos museus vinculados.
+ * 
+ * @package IBRAM_Theme
+ * @since   1.0.0
+ */

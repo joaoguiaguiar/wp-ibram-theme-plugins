@@ -1,33 +1,44 @@
 <?php
+/**
+ * Menus personalizados - Tema IBRAM
+ */
 
+// Segurança
+if (!defined('ABSPATH')) exit;
 
-// Registrar áreas de menu para o site
-function mi_register_menus() {
+/**
+ * Registra áreas de menu do site
+ */
+function ibram_registrar_menus() {
     register_nav_menus(array(
-        'menu-principal' => __('Menu Principal', 'blocksy-child'),
-    
+        'menu-principal' => 'Menu Principal',
     ));
 }
-add_action('init', 'mi_register_menus');
+add_action('init', 'ibram_registrar_menus');
 
-// Walkers personalizados para os menus
-class MI_Main_Menu_Walker extends Walker_Nav_Menu {
+/**
+ * Walker para menu principal (sem submenus)
+ */
+class IBRAM_Main_Menu_Walker extends Walker_Nav_Menu {
     function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
         $output .= '<a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a>';
     }
 
     function start_lvl(&$output, $depth = 0, $args = null) {
-        // Vazio para não criar sub-listas
+        // Vazio - não cria sub-listas
     }
 
     function end_lvl(&$output, $depth = 0, $args = null) {
-        // Vazio para não criar sub-listas
+        // Vazio - não cria sub-listas
     }
 }
 
-class MI_Menu_Lista_Walker extends Walker_Nav_Menu {
+/**
+ * Walker para menu lista (com categorias e itens)
+ */
+class IBRAM_Menu_Lista_Walker extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = null) {
-        // Não faz nada para evitar a criação de sub-listas
+        // Não cria sub-listas
     }
     
     function end_lvl(&$output, $depth = 0, $args = null) {

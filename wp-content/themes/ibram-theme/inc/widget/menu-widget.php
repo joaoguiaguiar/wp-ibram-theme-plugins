@@ -1,12 +1,16 @@
 <?php
-// Remove o widget antigo "Menu Lista"
-function remove_menu_lista_widget_completely() {
-    unregister_widget('Menu_Lista_Widget');
-}
-add_action('widgets_init', 'remove_menu_lista_widget_completely', 99);
+/**
+ * Widgets do Menu - Tema IBRAM
+ */
 
-// Registra a sidebar do menu principal
-function register_main_menu_sidebar() {
+// Segurança
+if (!defined('ABSPATH')) exit;
+
+
+/**
+ * Registra a sidebar do menu principal
+ */
+function ibram_registrar_sidebar_menu() {
     register_sidebar(array(
         'name'          => 'Menu Lista Categorias',
         'id'            => 'main-menu-sidebar',
@@ -17,11 +21,12 @@ function register_main_menu_sidebar() {
         'after_title'   => '</h3>',
     ));
 }
-add_action('widgets_init', 'register_main_menu_sidebar');
+add_action('widgets_init', 'ibram_registrar_sidebar_menu', 5); 
 
-
-// Conteúdo alternativo para o widget de menu
-function mi_get_menu_widget_content() {
+/**
+ * Conteúdo alternativo para o widget de menu
+ */
+function ibram_conteudo_widget_menu() {
     ob_start();
     if (is_active_sidebar('main-menu-sidebar')) {
         dynamic_sidebar('main-menu-sidebar');

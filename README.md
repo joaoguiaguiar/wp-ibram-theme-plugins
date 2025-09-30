@@ -27,13 +27,16 @@ A escolha do tema Blocksy permitiu integrar personalizações diretamente ao pai
 
 Tudo isso via PHP, sem a necessidade de editar o código manualmente.
 
-## ⚠️ Aviso
-
-Por questões de **confidencialidade e boas práticas**, este repositório contém **apenas arquivos de minha autoria**.
-Arquivos do core do WordPress, banco de dados ou configurações de servidor **não foram incluídos**.
 
 ## 🌐 Um dos Sites em produção
 
 [https://museuimperial.museus.gov.br/](https://museuimperial.museus.gov.br/)
 
 ![Logo IBRAM](./screenshot.jpg)
+
+**⚠️ BLINDAGEM LEGAL:**
+
+- Por questões de **confidencialidade e boas práticas**, este repositório contém **apenas arquivos de minha autoria** e não inclui dados sensíveis.
+- O código-fonte pertence integralmente ao **Instituto Brasileiro de Museus (IBRAM)**.
+- Este repositório é disponibilizado **exclusivamente para fins de portfólio profissional e demonstração técnica**, com a devida autorização do órgão.
+- **É proibida a comercialização (venda) ou redistribuição** do tema e plugins por terceiros.

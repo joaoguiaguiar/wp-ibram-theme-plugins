@@ -1,32 +1,43 @@
 <?php
-// Registrar Customizer APENAS para cor de fundo
-function mi_customize_register($wp_customize) {
-    // Seção para o menu
-    $wp_customize->add_section('mi_menu_options', array(
-        'title'    => __('Menu Personalizado', 'blocksy-child'),
+/**
+ * Customizer do Tema IBRAM - Apenas cor de fundo do menu
+ */
+
+// Segurança
+if (!defined('ABSPATH')) exit;
+
+/**
+ * Registra as opções no Customizer
+ */
+function ibram_customizer_menu($wp_customize) {
+    // Seção pro menu
+    $wp_customize->add_section('ibram_menu_options', array(
+        'title'    => 'Menu Personalizado IBRAM',
         'priority' => 30,
     ));
 
-    // APENAS cor de fundo do menu - SEM postMessage, vai RECARREGAR a página
-    $wp_customize->add_setting('mi_menu_bg_color', array(
+    // Só a cor de fundo do menu - recarrega a página
+    $wp_customize->add_setting('ibram_menu_bg_color', array(
         'default'   => '#121212',
         'sanitize_callback' => 'sanitize_hex_color',
-        'transport' => 'refresh', // MUDOU AQUI - VAI RECARREGAR TUDO
+        'transport' => 'refresh', // Recarrega tudo
     ));
 
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mi_menu_bg_color', array(
-        'label'    => __('Cor de Fundo do Menu', 'blocksy-child'),
-        'section'  => 'mi_menu_options',
-        'settings' => 'mi_menu_bg_color',
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'ibram_menu_bg_color', array(
+        'label'    => 'Cor de Fundo do Menu',
+        'section'  => 'ibram_menu_options',
+        'settings' => 'ibram_menu_bg_color',
     )));
 }
-add_action('customize_register', 'mi_customize_register');
+add_action('customize_register', 'ibram_customizer_menu');
 
-// CSS para a cor de fundo
-function mi_generate_menu_css() {
-    $bg_color = get_theme_mod('mi_menu_bg_color', '#121212');
+/**
+ * Gera o CSS da cor de fundo
+ */
+function ibram_gerar_css_menu() {
+    $bg_color = get_theme_mod('ibram_menu_bg_color', '#121212');
     ?>
-    <style id="mi-menu-bg-css">
+    <style id="ibram-menu-bg-css">
         .menu-personalizado,
         .menu-2,
         .menu-mobile {
@@ -35,5 +46,4 @@ function mi_generate_menu_css() {
     </style>
     <?php
 }
-add_action('wp_head', 'mi_generate_menu_css');
-?>
+add_action('wp_head', 'ibram_gerar_css_menu');
