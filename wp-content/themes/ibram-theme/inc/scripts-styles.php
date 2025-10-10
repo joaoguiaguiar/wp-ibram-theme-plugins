@@ -9,53 +9,58 @@ if (!defined('ABSPATH')) exit;
 /**
  * Carrega styles e scripts do tema
  */
-function ibram_carregar_assets() {
-    // CSS do tema pai (Blocksy)
-    wp_enqueue_style(
-        'blocksy-parent-style', 
-        get_template_directory_uri() . '/style.css'
-    );
-
-    // CSS do tema filho (IBRAM)
-    wp_enqueue_style(
-        'blocksy-child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array('blocksy-parent-style'),
-        filemtime(get_stylesheet_directory() . '/style.css')
-    );
-
-    // CSS dos menus
-    wp_enqueue_style(
-        'ibram-menu-style',
-        get_stylesheet_directory_uri() . '/css/menu.css',
-        array('blocksy-child-style'),
-        filemtime(get_stylesheet_directory() . '/css/menu.css')
-    );
-
-    // JS apenas nas páginas necessárias
-    if (is_front_page() || is_single() || is_page() || is_category()) {
-        wp_enqueue_script(
-            'ibram-tema-script',
-            get_stylesheet_directory_uri() . '/js/script.js',
-            array('jquery'),
-            filemtime(get_stylesheet_directory() . '/js/script.js'),
-            true
-        );
+function ibram_criar_arquivos_css_padrao() {
+    $css_dir = get_stylesheet_directory() . '/css';
+    
+    // Cria diretorio se não existir
+    if (!file_exists($css_dir)) {
+        wp_mkdir_p($css_dir);
+    }
+    
+    //  Cria o menu.css se não existir
+    $css_file = $css_dir . '/menu.css';
+    if (!file_exists($css_file)) {
+        file_put_contents($css_file, '/* Estilos do menu - Tema IBRAM */');
     }
 }
-add_action('wp_enqueue_scripts', 'ibram_carregar_assets', 100);
+add_action('after_switch_theme', 'ibram_criar_arquivos_css_padrao');
 
 /**
- * Debug dos estilos carregados (só pra admin)
+ * Limpa cache do tema quando salva custumização
  */
-function ibram_debug_estilos() {
-    if (!current_user_can('administrator')) return;
-    
-    global $wp_styles;
-    echo "<!-- ESTILOS CARREGADOS: \n";
-    foreach($wp_styles->queue as $handle) {
-        echo "$handle\n";
-    }
-    echo "-->";
+function ibram_limpar_cache_customizer($wp_customize) {
+    delete_transient('ibram_customizer_updated');
+    set_transient('ibram_customizer_updated', time(), HOUR_IN_SECONDS);
 }
-add_action('wp_head', 'ibram_debug_estilos', 999);
+add_action('customize_save_after', 'ibram_limpar_cache_customizer');
+
+/**
+ * Limpa cache ao ativar o tema
+ */
+function ibram_limpar_cache_ativacao() {
+    delete_transient('ibram_customizer_updated');
+    set_transient('ibram_customizer_updated', time(), HOUR_IN_SECONDS);
+}
+add_action('after_switch_theme', 'ibram_limpar_cache_ativacao');
+
+/**
+ * Versão dinamica pra quebrar cache
+ */
+function ibram_versao_dinamica_stylesheet() {
+    $versao_cache = get_transient('ibram_customizer_updated');
+    return $versao_cache ? (string) $versao_cache : wp_get_theme()->get('Version');
+}
+add_filter('stylesheet_version', 'ibram_versao_dinamica_stylesheet');
+
+/**
+ * Debug  no modo desenvolvimento (versão profissional)
+ */
+function ibram_debug_scripts() {
+    // SÃ“ EM DESENVOLVIMENTO MESMO
+    if (!defined('WP_DEBUG') || !WP_DEBUG || !is_customize_preview()) {
+        return;
+    }
+    
+    wp_add_inline_script('jquery', 'console.log("Customizer ativo - Tema IBRAM");');
+}
+add_action('wp_enqueue_scripts', 'ibram_debug_scripts');
