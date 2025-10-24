@@ -32,7 +32,7 @@ Tudo isso via PHP, sem a necessidade de editar o código manualmente.
 
 [https://museuimperial.museus.gov.br/](https://museuimperial.museus.gov.br/)
 
-![Logo IBRAM](./screenshot.jpg)
+![Logo IBRAM](./screenshot..jpeg)
 
 **⚠️ BLINDAGEM LEGAL:**
 
